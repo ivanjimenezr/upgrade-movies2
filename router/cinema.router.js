@@ -67,18 +67,6 @@ router.get('/location/:location', (req, res, next)=>{
     })
 })
 
-// // GET peliculas estrenadas a partir de la fecha indicada
-// router.get('/fecha/:fecha', (req, res, next)=>{
-//   const fecha = req.params.fecha;
-//   Movie.find({year:{$gt:fecha}})
-//     .then(movies => {
-//       res.status(200).json(movies)
-//     })
-//     .catch((err)=>{
-//       return next(new Error())
-//     })
-// })
-
 // POST para crear Cinema 
 router.post('/', (req, res, next) => {
   const newCinema = new Cinema({
